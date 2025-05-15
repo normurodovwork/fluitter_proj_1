@@ -5,11 +5,6 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Main page"),
-        backgroundColor: Colors.pink,
-        foregroundColor: Colors.white,
-      ),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -28,6 +23,7 @@ class MainPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _buildDot(is_active: true),
+                  _buildDot(),
                   _buildDot(),
                 ],
               ),
